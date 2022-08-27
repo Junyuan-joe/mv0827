@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>First jQuery</title>
+<style>
+     .showRed{color:red}
+</style>
+</head>
+<body>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+		
+	</script>
+	<p class="showRed">Hello World</p>
+	<p  id="phone">23826015</p>
+	<button id="b1" >Test1</button>
+	<button id="b2" class="showRed">Test2</button>
+	<script>
+		function b1_Click() {
+			alert("Button b1 clicked");
+		}
+		function start() {
+			//alert("Test jQuery");
+			$("#b1").click(b1_Click);//井字等於id
+			$("#b2").click(function() {
+				 $("#phone").addClass("showRed");
+			});
+		}
+		$(document).ready(start);
+	</script>
+</body>
+</html>
